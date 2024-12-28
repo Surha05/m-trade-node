@@ -1,0 +1,18 @@
+body {
+    color: var(--black);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+input{
+    outline: 0;
+}
