@@ -13,7 +13,10 @@
   height: 40px;
   cursor: pointer;
 }
-
+.mob-menu i{
+  font-size: 50px;
+  color: white;
+}
 @media (max-width: 800px) {
   .mob-menu {
     display: flex;

@@ -31,7 +31,7 @@
             return;
         }
         text.textContent = '';
-        document.location.href = '/main.php'
+        document.location.href = '/main.html'
     }
 
 

@@ -14,7 +14,13 @@
       <!-- <p class="header__user-name">Войти</p> -->
     </div>
     <div class="header__cart-block">
-      <a href="/cart.php">
+      <a href="/cart.html">
+      <img src="/img/icon/cart.png" class="header__cart-icon" />
+      <!-- <p class="header__cart-name">Корзина</p> -->
+      </a>
+    </div>
+    <div class="header__ contact-block">
+      <a href="/contact.html">
       <img src="/img/icon/cart.png" class="header__cart-icon" />
       <!-- <p class="header__cart-name">Корзина</p> -->
       </a>

@@ -1,6 +1,6 @@
-(function(){
+(function () {
   const section = document.querySelector('.mob-menu');
-  const btn_gamb = section.querySelector('.mob-menu__gamb-icon');
+  const btn_gamb = section.querySelector('.mob-menu__gamb');
   const btn_search = section.querySelector('.mob-menu__search-icon');
   const btn_user = section.querySelector('.mob-menu__user-icon');
   const btn_cart = section.querySelector('.mob-menu__cart-icon');
@@ -12,6 +12,7 @@
   // })
 
   function menu_toggle() {
+
     menu.classList.toggle('active');
     // if(menu.classList.contains('active')) {
     //   menu.classList.remove('active');
@@ -20,7 +21,7 @@
     //   menu.classList.add('active');
     //   menu_bg.style.display = 'block';
     //   menu_bg.style.opacity = 1;
-      
+
     // }
   }
 })();
