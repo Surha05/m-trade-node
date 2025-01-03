@@ -92,6 +92,11 @@ margin-bottom: 30px;
     gap: 10px;
     box-shadow:0 0 15px rgba(102, 102, 102, 0.5) ;
 }
+.new-product,
+.sale,
+.new{
+    margin-top: 90px;
+}
 .cookies__text{
     font-size: 13px;
 }
@@ -109,9 +114,7 @@ margin-bottom: 30px;
 
 @media(max-width:900px){
   
-    .main{
-        padding-top: 0;
-    }
+    
     .main__column{
         
         gap: 15px 0;
@@ -140,6 +143,7 @@ margin-bottom: 30px;
     }
 
     .banner{
+        margin-top: 0;
         height: 200px;
         margin-bottom: 15px;
         
@@ -162,7 +166,9 @@ margin-bottom: 30px;
 
 @media(max-width:500px){
   
-    
+    .main{
+        margin-top: 0;
+    }
     .main__column{
 
         gap: 10px 0;
@@ -187,6 +193,11 @@ margin-bottom: 30px;
         margin-top: 0;
         margin-bottom: 20px;
     }
+    .new-product,
+.sale,
+.new{
+    margin-top: 10px;
+}
     .line__text{
         font-size: 15px;
         

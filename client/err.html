@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M-Trade</title>
+    <link rel="stylesheet" href="/css/var.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/standart.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/card.css">
+    <link rel="stylesheet" href="/css/mob-menu.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/err.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">
+                <a href="/" class="header__logo-link">M-Trade</a>
+            </div>
+            <div class="header__gamb">
+                <img src="/img/icon/menu-bar.png" class="header__gamb-icon" />
+            </div>
+            <input class="header__search" type="search" placeholder="Найти в M-Trade" autocomplete="off" />
+            <div class="header__block">
+                <a href="/admin/">
+                    <i class='bx bx-user-circle'></i>
+                </a>
+                <!-- <p class="header__user-name">Войти</p> -->
+            </div>
+            <div class="header__block">
+                <a href="/cart.html">
+                    <i class='bx bx-cart'></i>
+                    <!-- <p class="header__cart-name">Корзина</p> -->
+                </a>
+            </div>
+            <div class="header__block">
+                <a href="tel:89637923931">
+                    <i class='bx bx-phone-call'></i>
+                    <!-- <p class="header__cart-name">Корзина</p> -->
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="menu__wrapper"></div>
+    <div class="menu">
+        <ul>
+            <li class="bg-gradient"><a href="">Товары со скидками</a></li>
+            <li><a href="../../caregory.php">Бакалея</a></li>
+            <li><a href="">Соки</a></li>
+            <li><a href="">Мучное</a></li>
+            <li><a href="">Макароны</a></li>
+            <li><a href="">Химия</a></li>
+            <li><a href="">Бытовое</a></li>
+            <li><a href="">Игрушки</a></li>
+            <li><a href="">Посуда</a></li>
+            <div class="underline"></div>
+            <li><a href="/contact.html">Контакты</a></li>
+        </ul>
+    </div>
+
+    <section class="mob-menu">
+        <div class="mob-menu__gamb">
+            <i class='bx bx-menu' class="mob-menu__gamb-icon"></i>
+        </div>
+        <div class="mob-menu__search">
+            <a href="#">
+                <i class='bx bx-search'></i>
+            </a>
+        </div>
+        <div class="mob-menu__user">
+            <a href="/admin/">
+                <i class='bx bx-user-circle'></i>
+            </a>
+        </div>
+        <div class="mob-menu__cart">
+            <a href="/cart.html">
+                <i class='bx bx-cart'></i>
+            </a>
+        </div>
+        <div class="mob-menu__contact">
+            <a href="tel:+79894736346">
+                <i class='bx bx-phone'></i>
+            </a>
+        </div>
+    </section>
+
+    <script src="/section/header/header.js"></script>
+    <script src="/section/header/mob-menu.js"></script>
+
+    <section class="err">
+        <div class="container">
+            <div class="err__block">
+                <div class="err__block-left">
+                    <p class="err__text">По Вашему запросу ничего не найдено</p>
+                    <a href="/main.html" class="err__link btn gradient">На главную</a>
+                </div>
+                <div class="err__block-right">
+                    <i class='bx bx-error-alt'></i>
+                </div>
+            </div>
+            <section class="container err__hit">
+                <h2 class="main__h2">Хит продаж</h2>
+                <div class="main__column">
+                  <div class="main__block">
+                    <img src="img/bg/img.webp" alt="" class="block__img" />
+                    <span class="block__price">143$</span>
+                    <p class="block__desc">Lorem ipsum dolor</p>
+                    <button class="block__btn gradient">Заказать</button>
+                  </div>
+                  <div class="main__block">
+                    <img src="img/bg/img.webp" alt="" class="block__img" />
+                    <span class="block__price">143$</span>
+                    <p class="block__desc">Lorem ipsum dolor</p>
+                    <button class="block__btn gradient">Заказать</button>
+                  </div>
+                  <div class="main__block">
+                    <img src="img/bg/img.webp" alt="" class="block__img" />
+                    <span class="block__price">143$</span>
+                    <p class="block__desc">Lorem ipsum dolor</p>
+                    <button class="block__btn gradient">Заказать</button>
+                  </div>
+                  <div class="main__block">
+                    <img src="img/bg/img.webp" alt="" class="block__img" />
+                    <span class="block__price">143$</span>
+                    <p class="block__desc">Lorem ipsum dolor</p>
+                    <button class="block__btn gradient">Заказать</button>
+                  </div>
+                  <div class="main__block">
+                    <img src="img/bg/img.webp" alt="" class="block__img" />
+                    <span class="block__price">143$</span>
+                    <p class="block__desc">Lorem ipsum dolor</p>
+                    <button class="block__btn gradient">Заказать</button>
+                  </div>
+                  <div class="main__block">
+                    <a href="/card.php">
+                      <img src="img/bg/img.webp" alt="" class="block__img" />
+                      <span class="block__price">14322$</span>
+                      <p class="block__desc">Lorem ipsum dolor</p>
+                    </a>
+                    <button class="block__btn gradient">Заказать</button>
+                  </div>
+                  <div class="main__block">
+                    <img src="img/bg/img.webp" alt="" class="block__img" />
+                    <span class="block__price">143$</span>
+                    <p class="block__desc">Lorem ipsum dolor</p>
+                    <button class="block__btn gradient">Заказать</button>
+                  </div>
+                  <div class="main__block">
+                    <img src="img/bg/img.webp" alt="" class="block__img" />
+                    <span class="block__price">143$</span>
+                    <p class="block__desc">Lorem ipsum dolor</p>
+                    <button class="block__btn gradient">Заказать</button>
+                  </div>
+                  <div class="main__block">
+                    <img src="img/bg/img.webp" alt="" class="block__img" />
+                    <span class="block__price">143$</span>
+                    <p class="block__desc">Lorem ipsum dolor</p>
+                    <button class="block__btn gradient">Заказать</button>
+                  </div>
+                  <div class="main__block">
+                    <img src="img/bg/img.webp" alt="" class="block__img" />
+                    <span class="block__price">143$</span>
+                    <p class="block__desc">Lorem ipsum dolor</p>
+                    <button class="block__btn gradient">Заказать</button>
+                  </div>
+                  <div class="main__block">
+                    <img src="img/bg/img.webp" alt="" class="block__img" />
+                    <span class="block__price">143$</span>
+                    <p class="block__desc">Lorem ipsum dolor</p>
+                    <button class="block__btn gradient">Заказать</button>
+                  </div>
+                  <div class="main__block">
+                    <img src="img/bg/img.webp" alt="" class="block__img" />
+                    <span class="block__price">143$</span>
+                    <p class="block__desc">Lorem ipsum dolor</p>
+                    <button class="block__btn gradient">Заказать</button>
+                  </div>
+                </div>
+                <button class="btn-second main__btn"><a href="../../hit.php">Посмотреть еще</a></button>
+              </section>
+            
+        </div>
+    </section>
+</body>
+
+</html>

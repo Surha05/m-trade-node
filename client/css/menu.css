@@ -27,12 +27,18 @@
   transition: 0.5s;
   display: none;
 }
+.underline{
+  border-bottom: 1px solid #bbb;
+  margin: 10px 0;
+
+}
 .menu li {
   /* margin-bottom: 8px;  */
   padding: 8px;
   border-radius: 4px;
   transition: 0.5s;
 }
+
 .menu li:hover {
   background: #eee;
 }
