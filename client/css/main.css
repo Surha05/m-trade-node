@@ -30,7 +30,7 @@
 }
 .block__price{
     font-size: 20px;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     color: var(--color-1);
     font-weight: bold;
 }
@@ -111,7 +111,19 @@ margin-bottom: 30px;
     cursor: pointer; 
     
 }
-
+.block__prices{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.block__bonus{
+    font-size: 11px;
+    background: var(--color-1);
+    padding: 3px;
+    border-radius: 10px;
+}
 @media(max-width:900px){
   
     
@@ -185,6 +197,7 @@ margin-bottom: 30px;
     }
 
     .banner{
+        margin-top: 15px;
         height: 150px;
         margin-bottom: 10px;
     }

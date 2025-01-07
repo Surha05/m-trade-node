@@ -6,7 +6,13 @@
     align-items: center;
     gap: 10px;
 }
-
+.desc__bonus{
+    font-size: 11px;
+    background: var(--color-1);
+    padding: 3px;
+    border-radius: 10px;
+    /* padding: 1px 3px; */
+}
 .crumbs__back-icon {
     width: 25px;
 }
