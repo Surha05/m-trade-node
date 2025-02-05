@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>M-Trade</title>
+
+    <!-- Favicons -->
+    <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+    <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"> -->
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/standart.css" rel="stylesheet" />
+    <link href="assets/css/surha.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <span class="d-none d-lg-block">M-Trade</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+
+          <li class="nav-item dropdown pe-3">
+            <span class="d-none d-md-block pe-3">Администратор</span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/administrator/">
+            <i class="bi bi-grid"></i>
+            <span>Контрагенты</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/administrator/orders.html">
+            <i class="bi bi-grid"></i>
+            <span>Заказы</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/admin/setting.html">
+            <i class="bi bi-person"></i>
+            <span>Настройки</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <main id="main" class="main">
+      <div class="pagetitle">
+        <h1>Заказы</h1>
+      </div>
+
+      <section class="section dashboard">
+        <div class="row">
+          <div class="col-xxl-4 col-md-6">
+            <div class="card info-card sales-card">
+              <div class="card-body">
+                <h5 class="card-title">Контрагенты <span>| количество</span></h5>
+                <div class="d-flex align-items-center">
+                  <div
+                    class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                  >
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <div class="ps-3">
+                    <h6>145</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xxl-4 col-md-6">
+            <div class="card info-card revenue-card">
+              <div class="card-body">
+                <h5 class="card-title">Заказы <span>| количество</span></h5>
+
+                <div class="d-flex align-items-center">
+                  <div
+                    class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                  >
+                    <i class="bi bi-cart"></i>
+                  </div>
+                  <div class="ps-3">
+                    <h6>3 450</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="card recent-sales overflow-auto">
+              <div class="card-body">
+                <h5 class="card-title">Заказы</h5>
+                <div class="search-section">
+                  <input class="search-section__input" placeholder="Поиск" />
+                  <button class="search-section__btn">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </div>
+                <div class="table-section">
+                  <div class="table-section__head">
+                    <div class="w150">
+                      Номер <i class="bi bi-arrow-down-up"></i>
+                    </div>
+                    <div class="w150">
+                      Дата <i class="bi bi-arrow-down-up"></i>
+                    </div>
+                    <div class="w150 tar">
+                      Сумма
+                      <i class="bi bi-arrow-down-up"></i>
+                    </div>
+                    <div class="w300">
+                      Контрагент
+                      <i class="bi bi-arrow-down-up"></i>
+                    </div>
+                  </div>
+                  <div class="table-section__row">
+                    <div class="w150">#0001</div>
+                    <div class="w150">28/12/2024</div>
+                    <div class="w150">30 059 &#8381;</div>
+                    <div class="w300">Глобус</div>
+                  </div>
+                  <div class="table-section__row">
+                    <div class="w150">#0002</div>
+                    <div class="w150">01/01/2025</div>
+                    <div class="w150">300 050 &#8381;</div>
+                    <div class="w300">Панорама</div>
+                  </div>
+                  <div class="table-section__row">
+                    <div class="w150">#0003</div>
+                    <div class="w150">02/02/2025</div>
+                    <div class="w150">70 059 &#8381;</div>
+                    <div class="w300">Панорама</div>
+                  </div>
+                  <div class="table-section__row">
+                    <div class="w150">#0005</div>
+                    <div class="w150">11/03/2025</div>
+                    <div class="w150">300 050 &#8381;</div>
+                    <div class="w300">Глобус</div>
+                  </div>
+                  <div class="table-section__row">
+                    <div class="w150">#0013</div>
+                    <div class="w150">22/03/2025</div>
+                    <div class="w150">790 059 &#8381;</div>
+                    <div class="w300">Панорама</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="copyright">
+        <strong><span>M-Trade</span></strong> &copy; Платформа продаж
+      </div>
+      <div class="credits">
+        Создано на <a href="https://surha.ru/">Surha.ru</a>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
