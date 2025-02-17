@@ -4,14 +4,14 @@
 // адрес  /contractors/
 const contractors = [
   {
-    'guid': '6f8f40f8-4c4b-4d55-a60b-4b92a0bc5a1h', 
-    'name': 'Контрагент 1', 
-    'code_1c': 'C001', 
-    'phone': '1234567890', 
-    'email': 'contact@contractor.com', 
-    'delivery_address': 'ул. Пушкина, д. 10', 
-    'login': 'contractor1', 
-    'password': 'password123'
+    "guid": "6f8f40f8-4c4b-4d55-a60b-4b92a0bc5a1h", 
+    "name": "Контрагент 1", 
+    "code_1c": "C001", 
+    "phone": "1234567890", 
+    "email": "contact@contractor.com", 
+    "delivery_address": "ул. Пушкина, д. 10", 
+    "login": "contractor1", 
+    "password": "password123"
   }
 ]
 
@@ -91,6 +91,16 @@ const orders = [
   },
 ]
 
+// поставщики
+// адрес  /suppliers/
+const suppliers = [
+  {
+    'guid': '4c8d40f8-4c4b-4d55-a60b-4b92a0bc5a1e', 
+    'name': 'Поставщик 1', 
+    'code_1c': '1C001'
+  }
+]
+
 
 // партнёры
 // адрес  /partners/
@@ -99,16 +109,6 @@ const orders = [
 //     'guid': '3c7f40f8-4c4b-4d55-a60b-4b92a0bc5a1d', 
 //     'name': 'Партнёр 1', 
 //     'code_1c': 'P001'
-//   }
-// ]
-
-// поставщики
-// адрес  /suppliers/
-// const suppliers = [
-//   {
-//     'guid': '4c8d40f8-4c4b-4d55-a60b-4b92a0bc5a1e', 
-//     'name': 'Поставщик 1', 
-//     'code_1c': '1C001'
 //   }
 // ]
 

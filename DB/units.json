@@ -1,0 +1,18 @@
+[
+  {
+    "guid": "unit-001", 
+    "name": "шт", 
+    "code_1c": "U001", 
+    "coefficient": 1.0, 
+    "is_base": true, 
+    "nomenclature_guid": "nomen-001"
+  },
+  {
+    "guid": "unit-002", 
+    "name": "кг", 
+    "code_1c": "U002", 
+    "coefficient": 1.0, 
+    "is_base": true, 
+    "nomenclature_guid": "nomen-002"
+  }
+]

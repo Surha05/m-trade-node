@@ -1,0 +1,17 @@
+[
+  {
+    "guid": "supplier-001", 
+    "name": "фирма Макфа", 
+    "code_1c": "S-001"
+  },
+  {
+    "guid": "supplier-002", 
+    "name": "Snickers company", 
+    "code_1c": "S-002"
+  },
+  {
+    "guid": "supplier-003", 
+    "name": "OOO Бета", 
+    "code_1c": "S-003"
+  }
+]

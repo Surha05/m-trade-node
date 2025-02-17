@@ -1,0 +1,32 @@
+[
+  {
+    "guid": "cont-111", 
+    "name": "Панорама", 
+    "code_1c": "C001", 
+    "phone": "89281234567", 
+    "email": "panorama@cmail.ru", 
+    "delivery_address": "ул. Пушкина, д. 10", 
+    "login": "panorama", 
+    "password": "panorama123"
+  },
+  {
+    "guid": "cont-222", 
+    "name": "Магнит", 
+    "code_1c": "C002", 
+    "phone": "89225553344", 
+    "email": "magnit@mail.ru", 
+    "delivery_address": "ул. Сальмана, д. 10", 
+    "login": "magnit", 
+    "password": "magnit123"
+  },
+  {
+    "guid": "cont-333", 
+    "name": "Малыш", 
+    "code_1c": "C003", 
+    "phone": "89259990000", 
+    "email": "", 
+    "delivery_address": "ул. Ленина, д. 10", 
+    "login": "malish", 
+    "password": "malish123"
+  }
+]
