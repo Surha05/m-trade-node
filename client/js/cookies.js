@@ -1,5 +1,4 @@
 
-
 (function () {
     const section = document.querySelector('.cookies');
     const btn = document.querySelector('.cookies__btn');
@@ -16,8 +15,4 @@
         if (!section.classList.contains('top')) localStorage.setItem('div', div);
 
     }
-
-
-
-
 })()
