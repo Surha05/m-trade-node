@@ -7,23 +7,20 @@ const fs = require('fs')
 function index(req, res, next) {
   const coockie = getCookie(req)
   if(coockie === undefined) {
-    res.sendFile(path_auth)
+    res.redirect('/auth')
     return
   }
-  let isAuth = false
   let contractors = fs.readFileSync(path_contractors_DB, 'utf-8')
   contractors = JSON.parse(contractors)
   for(let client of contractors) {
     const password = client.password
     const hash = md5(password)
     if(hash == coockie) {
-      res.sendFile(path_main)
+      res.redirect('/main')
       break
     }
   }
-  res.sendFile(path_auth)
-  // res.cookie('AuthSession', 'somekeyhere');
-  
+  res.redirect('/auth')
 }
 
 module.exports.index = index
