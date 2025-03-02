@@ -20,11 +20,10 @@
 }
 .main__block{
     width: 16%;
-    
 }
 .block__img{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     border-radius: 15px;
     margin-bottom: 5px;
 }
