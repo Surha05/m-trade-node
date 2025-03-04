@@ -20,7 +20,8 @@ function main(req, res) {
     }
     const hash = md5(password);
     if (hash == coockie) {
-      res.sendFile(path_main);
+      res.redirect('/main.html')
+      // res.sendFile(path_main)
       return
     }
   }
