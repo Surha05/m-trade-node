@@ -1,7 +1,8 @@
 const log = console.log
 
-function getCookie(req) {
+function getCookie(req, res) {
   const cookies = req.headers.cookie
+  if(!cookies) return
   let indStart = cookies.indexOf('_m_trade=')
   if(indStart == -1) return
   let indEnd = cookies.indexOf(';', indStart)
