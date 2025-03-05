@@ -1,12 +1,15 @@
 const log = console.log
 
 function getCookie(req, res) {
-  const cookies = req.headers.cookie
-  if(!cookies) return
-  let indStart = cookies.indexOf('_m_trade=')
+  const coockies = req.headers.cookie
+  
+  if(!coockies) return
+  let indStart = coockies.indexOf('_m_trade=')
   if(indStart == -1) return
-  let indEnd = cookies.indexOf(';', indStart)
-  let coockie = cookies.slice(indStart, indEnd)
+  let indEnd = coockies.indexOf(';', indStart)
+  let coockie
+  if(indEnd == -1) coockie = coockies.slice(indStart)
+  else coockie = coockies.slice(indStart, indEnd)
   let indEqual = coockie.indexOf('=', coockie)
   let value = coockie.slice(indEqual+1)
   return value
