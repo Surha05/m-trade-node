@@ -14,6 +14,9 @@ const { auth } = require('./my_modules/routes/auth')
 const { main } = require('./my_modules/routes/main')
 const { path_client } = require('./my_modules/pathes')
 const { get_suppliers } = require('./API/suppliers/index')
+const { get_contractors } = require('./API/contractors/index')
+const { get_nomenclatures } = require('./API/nomenclatures/index')
+
 
 // переменные
 const server = express()
@@ -29,6 +32,8 @@ server.get('/auth', auth)
 server.get('/main', main)
 server.post('/post/auth', urlencoded_parser, post_auth)
 server.get('/API/suppliers/get', get_suppliers)
+server.get('/API/contractors/get', get_contractors)
+server.get('/API/nomenclatures/get', get_nomenclatures)
 server.use(express.static(path_client))
 
 // функции
