@@ -12,7 +12,7 @@
 }
 .main__column{
     display: flex;
-    align-items: center;
+    align-items: end;
     margin-bottom: 15px;
     gap: 30px 2%;
     flex-wrap: wrap;

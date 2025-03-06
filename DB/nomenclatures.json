@@ -5,7 +5,8 @@
     "code_1c": "T001", 
     "supplier_guid": "supplier-001",
     "price": "65",
-    "bonus": "10"
+    "bonus": "10",
+    "img": "makaron-makfa.webp"
   },
   {
     "guid": "nomen-002", 
@@ -13,7 +14,8 @@
     "code_1c": "T002", 
     "supplier_guid": "supplier-001",
     "price": "177",
-    "bonus": "14"
+    "bonus": "14",
+    "img": "dariya.jpg"
   },
   {
     "guid": "nomen-003", 
@@ -21,7 +23,8 @@
     "code_1c": "T003", 
     "supplier_guid": "supplier-001",
     "price": "78",
-    "bonus": "0"
+    "bonus": "0",
+    "img": "гречка.jpg"
   },
   {
     "guid": "nomen-004", 
@@ -29,7 +32,8 @@
     "code_1c": "T004", 
     "supplier_guid": "supplier-002",
     "price": "45",
-    "bonus": "0"
+    "bonus": "0",
+    "img": "сникерс.png"
   },
   {
     "guid": "nomen-005", 
@@ -37,7 +41,8 @@
     "code_1c": "T005", 
     "supplier_guid": "supplier-002",
     "price": "45",
-    "bonus": "4"
+    "bonus": "4",
+    "img": "баунти.jpg"
   },
   {
     "guid": "nomen-006", 
@@ -45,7 +50,8 @@
     "code_1c": "T006", 
     "supplier_guid": "supplier-002",
     "price": "35",
-    "bonus": "20"
+    "bonus": "20",
+    "img": "твикс.jpg"
   },
   {
     "guid": "nomen-007", 
@@ -53,7 +59,8 @@
     "code_1c": "T007", 
     "supplier_guid": "supplier-003",
     "price": "650",
-    "bonus": "15"
+    "bonus": "15",
+    "img": "арабика.webp"
   },
   {
     "guid": "nomen-008", 
@@ -61,7 +68,8 @@
     "code_1c": "T008", 
     "supplier_guid": "supplier-003",
     "price": "165",
-    "bonus": "10"
+    "bonus": "10",
+    "img": "аббас.jpg"
   },
   {
     "guid": "nomen-009", 
@@ -69,6 +77,7 @@
     "code_1c": "T009", 
     "supplier_guid": "supplier-003",
     "price": "140",
-    "bonus": "0"
+    "bonus": "0",
+    "img": "какао.jpg"
   }
 ]

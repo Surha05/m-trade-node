@@ -13,7 +13,7 @@ import { get_suppliers } from "./API/suppliers/index.js"
     main.innerHTML += `
       <div class="main__block" id="${el.guid}">
         <a href="/card.html?id=${el.guid}">
-          <img src="img/bg/img.webp" alt="" class="block__img" />
+          <img src="/img/product/${el.img}" alt="" class="block__img" />
         </a>
         <div class="block__prices">
           <span class="block__price">${el.price} руб.</span>
