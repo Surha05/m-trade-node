@@ -8,7 +8,6 @@ function post_auth(req, res, next) {
 
   const login_client = req.body.login
   const password_client = req.body.password
-  const isAuth = false
   let contractors = fs.readFileSync(path_contractors_DB, 'utf-8')
   contractors = JSON.parse(contractors)
   for(let client of contractors) {
@@ -17,12 +16,11 @@ function post_auth(req, res, next) {
     if(password_true == password_client && login_true == login_client) {
       const hash = md5(password_true)
       res.cookie('_m_trade', hash);
-      res.sendFile(path_main)
-      break
+      res.redirect('/main')
+      return
     }
   }
-  res.sendFile(path_auth)
-  
+  res.redirect('/auth')
 }
 
 module.exports.post_auth = post_auth
