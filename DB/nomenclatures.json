@@ -3,54 +3,72 @@
     "guid": "nomen-001", 
     "name": "Макароны Макфа", 
     "code_1c": "T001", 
-    "supplier_guid": "supplier-001"
+    "supplier_guid": "supplier-001",
+    "price": "65",
+    "bonus": "10"
   },
   {
     "guid": "nomen-002", 
     "name": "Мука Марья", 
     "code_1c": "T002", 
-    "supplier_guid": "supplier-001"
+    "supplier_guid": "supplier-001",
+    "price": "177",
+    "bonus": "14"
   },
   {
     "guid": "nomen-003", 
     "name": "Гречка Отборная", 
     "code_1c": "T003", 
-    "supplier_guid": "supplier-001"
+    "supplier_guid": "supplier-001",
+    "price": "78",
+    "bonus": "0"
   },
   {
     "guid": "nomen-004", 
     "name": "Сникерс", 
     "code_1c": "T004", 
-    "supplier_guid": "supplier-002"
+    "supplier_guid": "supplier-002",
+    "price": "45",
+    "bonus": "0"
   },
   {
     "guid": "nomen-005", 
     "name": "Баунти", 
     "code_1c": "T005", 
-    "supplier_guid": "supplier-002"
+    "supplier_guid": "supplier-002",
+    "price": "45",
+    "bonus": "4"
   },
   {
     "guid": "nomen-006", 
     "name": "Твикс", 
     "code_1c": "T006", 
-    "supplier_guid": "supplier-002"
+    "supplier_guid": "supplier-002",
+    "price": "35",
+    "bonus": "20"
   },
   {
     "guid": "nomen-007", 
     "name": "Кофе Арабика", 
     "code_1c": "T007", 
-    "supplier_guid": "supplier-003"
+    "supplier_guid": "supplier-003",
+    "price": "650",
+    "bonus": "15"
   },
   {
     "guid": "nomen-008", 
     "name": "Чай Аббас", 
     "code_1c": "T008", 
-    "supplier_guid": "supplier-003"
+    "supplier_guid": "supplier-003",
+    "price": "165",
+    "bonus": "10"
   },
   {
     "guid": "nomen-009", 
     "name": "Какао детский", 
     "code_1c": "T009", 
-    "supplier_guid": "supplier-003"
+    "supplier_guid": "supplier-003",
+    "price": "140",
+    "bonus": "0"
   }
 ]
