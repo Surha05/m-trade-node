@@ -3,7 +3,8 @@
     "guid": "nomen-001", 
     "name": "Макароны Макфа", 
     "code_1c": "T001", 
-    "supplier_guid": "supplier-001"
+    "supplier_guid": "supplier-001",
+    "price": "400"
   },
   {
     "guid": "nomen-002", 
