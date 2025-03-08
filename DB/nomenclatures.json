@@ -6,7 +6,8 @@
     "supplier_guid": "supplier-001",
     "price": "65",
     "bonus": "10",
-    "img": "makaron-makfa.webp"
+    "img": "makaron-makfa.webp",
+    "new":"true"
   },
   {
     "guid": "nomen-002", 
@@ -15,7 +16,8 @@
     "supplier_guid": "supplier-001",
     "price": "177",
     "bonus": "14",
-    "img": "dariya.jpg"
+    "img": "dariya.jpg",
+    "new":"true"
   },
   {
     "guid": "nomen-003", 
@@ -24,7 +26,9 @@
     "supplier_guid": "supplier-001",
     "price": "78",
     "bonus": "0",
-    "img": "гречка.jpg"
+    "img": "гречка.jpg",
+    "hit":"true"
+    
   },
   {
     "guid": "nomen-004", 
@@ -33,7 +37,8 @@
     "supplier_guid": "supplier-002",
     "price": "45",
     "bonus": "0",
-    "img": "сникерс.png"
+    "img": "сникерс.png",
+    "hit":"true"
   },
   {
     "guid": "nomen-005", 
@@ -42,7 +47,8 @@
     "supplier_guid": "supplier-002",
     "price": "45",
     "bonus": "4",
-    "img": "баунти.jpg"
+    "img": "баунти.jpg",
+    "sale":"true"
   },
   {
     "guid": "nomen-006", 
