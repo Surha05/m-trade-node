@@ -1,12 +1,12 @@
-import { get_nomenclatures_hit } from "./API/nomenclatures/index.js"
-import { get_suppliers_hit} from "./API/suppliers/index.js"
+import { get_nomenclatures } from "./API/nomenclatures/index.js"
+import { get_suppliers} from "./API/suppliers/index.js"
 (async function () {
   const section = document.querySelector('#hit-section')
   const main = section.querySelector('.main__column')
 
   const log = console.log
-  let nomenclatures = await get_nomenclatures_hit()
-  let suppliers = await get_suppliers_hit()
+  let nomenclatures = await get_nomenclatures()
+  let suppliers = await get_suppliers()
   
 
   for(let el of nomenclatures) {
