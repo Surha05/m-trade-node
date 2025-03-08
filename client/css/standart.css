@@ -16,7 +16,7 @@
   border-radius: 10px;
   /* background: #ffa600; */
   cursor: pointer;
-  background: linear-gradient( to right ,var(--color-1),var(--color-2))
+  /* background: linear-gradient( to right ,var(--color-1),var(--color-2)) */
 }
 
 .btn-second{
