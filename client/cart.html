@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <div class="header__logo">
         <a href="/" class="header__logo-link">M-Trade</a>
@@ -36,12 +36,12 @@
         </a>
         <!-- <p class="header__user-name">Войти</p> -->
       </div>
-      <div class="header__block">
+      <!-- <div class="header__block">
         <a href="/cart.html">
           <i class="bx bx-cart"></i>
-          <!-- <p class="header__cart-name">Корзина</p> -->
+          
         </a>
-      </div>
+      </div> -->
       <div class="header__block">
         <a href="tel:89637923931">
           <i class="bx bx-phone"></i>
@@ -109,12 +109,14 @@
   <script type="module" src="/js/menu.js"></script>
   <script type="module" src="/section/header/header.js"></script>
   <script src="/section/header/mob-menu.js"></script>
+
   <main id="cart">
     <div class="container cart__container">
       <div class="cart__data">
         <div class="cart__area">
           <h1 class="h1">Корзина</h1>
           <p class="cart__count-product">2 товара</p>
+          <div id="product-list">
           <div class="cart__list">
             <div class="cart__list-left">
               <div class="cart__photo-block">
@@ -191,6 +193,7 @@
             </div>
           </div>
         </div>
+        </div>
         <div class="cart__area">
           <h2>Списать бонусы</h2>
           <label class="label__radio">
@@ -245,8 +248,10 @@
     </div>
   </main>
 
-  <script src="/section/header/header.js"></script>
+  <script type="module" src="/section/header/header.js"></script>
   <script src="/section/header/mob-menu.js"></script>
+  <script src="/js/cart.js"></script>
+  
 </body>
 
 </html>
