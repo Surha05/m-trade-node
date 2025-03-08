@@ -16,8 +16,6 @@
 </head>
 
 <body>
-  <link rel="stylesheet" href="/css/mob-menu.css">
-
   <header class="header">
     <div class="container">
       <div class="header__logo">
@@ -26,48 +24,91 @@
       <div class="header__gamb">
         <img src="/img/icon/menu-bar.png" class="header__gamb-icon" />
       </div>
-      <input class="header__search" type="search" placeholder="Найти в M-Trade" autocomplete="off" />
-      <div class="header__user-block">
-        <img src="/img/icon/account.png" class="header__user-icon" />
+      <input
+        class="header__search"
+        type="search"
+        placeholder="Найти в M-Trade"
+        autocomplete="off"
+      />
+      <div class="header__block">
+        <a href="/admin/">
+          <i class="bx bx-user-circle"></i>
+        </a>
         <!-- <p class="header__user-name">Войти</p> -->
       </div>
-      <div class="header__cart-block">
-        <a href="/cart.php">
-          <img src="/img/icon/cart.png" class="header__cart-icon" />
+      <div class="header__block">
+        <a href="/cart.html">
+          <i class="bx bx-cart"></i>
           <!-- <p class="header__cart-name">Корзина</p> -->
+        </a>
+      </div>
+      <div class="header__block">
+        <a href="tel:89637923931">
+          <i class="bx bx-phone"></i>
+          <!-- <p class="header__cart-name">Корзина</p> -->
+        </a>
+      </div>
+      <div class="header__block">
+        <a href="" id="exit-account">
+          <i class="bx bx-exit"></i>
         </a>
       </div>
     </div>
   </header>
   <div class="menu__wrapper"></div>
-  <div class="menu">
+  <menu class="menu">
     <ul>
       <li class="bg-gradient"><a href="">Товары со скидками</a></li>
-      <li><a href="../../caregory.php">Бакалея</a></li>
-      <li><a href="">Соки</a></li>
-      <li><a href="">Мучное</a></li>
-      <li><a href="">Макароны</a></li>
-      <li><a href="">Химия</a></li>
-      <li><a href="">Бытовое</a></li>
-      <li><a href="">Игрушки</a></li>
-      <li><a href="">Посуда</a></li>
+      <div id="sidebar-menu">
+        <!-- <li><a href="/category.html">Соки</a></li> -->
+      </div>
+      <div class="underline"></div>
+      <li><a href="/contact.html">Контакты</a></li>
     </ul>
-  </div>
+  </menu>
 
   <section class="mob-menu">
     <div class="mob-menu__gamb">
-      <img src="/img/icon/menu-bar.png" alt="" class="mob-menu__gamb-icon">
+      <i class="bx bx-menu" class="mob-menu__gamb-icon"></i>
     </div>
     <div class="mob-menu__search">
-      <img src="/img/icon/search.png" alt="" class="mob-menu__search-icon">
+      <a href="#">
+        <i class="bx bx-search"></i>
+      </a>
     </div>
     <div class="mob-menu__user">
-      <img src="/img/icon/account.png" alt="" class="mob-menu__user-icon">
+      <a href="/admin/">
+        <i class="bx bx-user-circle"></i>
+      </a>
+      <!-- <p class="header__user-name">Войти</p> -->
     </div>
     <div class="mob-menu__cart">
-      <img src="/img/icon/cart.png" alt="" class="mob-menu__cart-icon">
+      <a href="/cart.html">
+        <i class="bx bx-cart"></i>
+        <!-- <p class="header__cart-name">Корзина</p> -->
+      </a>
+    </div>
+    <div class="header__block">
+      <a href="tel:89637923931">
+        <i class="bx bx-phone"></i>
+        <!-- <p class="header__cart-name">Корзина</p> -->
+      </a>
+    </div>
+    <div class="header__block">
+      <a href="" id="exit-account">
+        <i class="bx bx-exit"></i>
+      </a>
+    </div>
+    <div class="mob-menu__contact">
+      <a href="tel:+79894736346">
+        <i class="bx bx-phone"></i>
+      </a>
     </div>
   </section>
+
+  <script type="module" src="/js/menu.js"></script>
+  <script type="module" src="/section/header/header.js"></script>
+  <script src="/section/header/mob-menu.js"></script>
   <main id="cart">
     <div class="container cart__container">
       <div class="cart__data">
