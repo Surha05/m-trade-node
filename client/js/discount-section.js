@@ -23,7 +23,7 @@ import { get_suppliers } from "./API/suppliers/index.js"
         </div>
         <a href="/category.html?id=${el.supplier_guid}" class="block__desc">${get_category(el.supplier_guid)}</a>
         <h3 class="block__name">${el.name}</h3>
-        <button data-btn="in-cart" class="btn block__btn gradient">В корзину</button>
+        <button class="btn block__btn gradient">В корзину</button>
       </div>
     `
   }

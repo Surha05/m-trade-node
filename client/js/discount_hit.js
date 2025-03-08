@@ -1,12 +1,12 @@
-import { get_nomenclatures } from "./API/nomenclatures/index.js"
-import { get_suppliers } from "./API/suppliers/index.js"
+import { get_nomenclatures_hit } from "./API/nomenclatures_hit/index.js"
+import { get_suppliers_hit} from "./API/suppliers_hit/index.js"
 (async function () {
-  const section = document.querySelector('#sale-section')
+  const section = document.querySelector('#hit-section')
   const main = section.querySelector('.main__column')
 
   const log = console.log
-  let nomenclatures = await get_nomenclatures()
-  let suppliers = await get_suppliers()
+  let nomenclatures = await get_nomenclatures_hit()
+  let suppliers = await get_suppliers_hit()
   
 
   for(let el of nomenclatures) {
@@ -23,7 +23,7 @@ import { get_suppliers } from "./API/suppliers/index.js"
         </div>
         <a href="/category.html?id=${el.supplier_guid}" class="block__desc">${get_category(el.supplier_guid)}</a>
         <h3 class="block__name">${el.name}</h3>
-        <button data-btn="in-cart" class="btn block__btn gradient">В корзину</button>
+        <button class="btn block__btn gradient">В корзину</button>
       </div>
     `
   }

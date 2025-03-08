@@ -50,6 +50,7 @@
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  position: relative;
 }
 .header__block i{
   font-size: 35px;
@@ -59,6 +60,20 @@
   height: 40px;
   display: block;
   margin-bottom: 4px;
+}
+.header__prod-count {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  min-width: 16px;
+  padding: 3px;
+  background: rgba(0, 128, 0, 0.398);
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  font-weight: bold;
+  border-radius: 15px;
 }
 
 .header__user-name,
