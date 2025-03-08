@@ -1,5 +1,7 @@
 (function () {
   document.addEventListener('click', click_btn)
+  const header = document.querySelector('#header')
+  const count = header.querySelector('#prod-count')
   
   function click_btn(e) {
     if (!e.target.closest('[data-btn="in-cart"]')) return;
@@ -25,6 +27,7 @@
     arr = set_to_arr(set)
     arr = JSON.stringify(arr)
     localStorage.setItem('product-in-cart', arr)
+    count.textContent = set.size
   }
   function del_from_LS(id) {
     let arr = localStorage.getItem('product-in-cart') || '[]'
@@ -34,6 +37,7 @@
     arr = set_to_arr(set)
     arr = JSON.stringify(arr)
     localStorage.setItem('product-in-cart', arr)
+    count.textContent = set.size
   }
   function set_to_arr(set) {
     let arr = []
