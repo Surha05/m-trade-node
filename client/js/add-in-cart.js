@@ -1,32 +1,43 @@
 (function () {
-  // let btns = document.querySelectorAll('.block__btn');
-  const log = console.log
-
   document.addEventListener('click', click_btn)
-  // for (let el of btns) {
-  //   el.addEventListener('click', (e) => {
-  //     let tar = e.target;
-  //     // el.classList.toggle('block__btn')
-  //     el.classList.toggle('in-cart');
-  //     // el.classList.remove('.gradient');
-  //     if (el.classList.contains('block__btn')) tar.textContent = 'В корзину';
-  //     if (el.classList.contains('in-cart')) tar.textContent = 'В корзине';
-  //   });
-  // }
+  
   function click_btn(e) {
-    if(!e.target.closest('[data-btn="in-cart"]')) return
-    let btn = e.target.closest('[data-btn="in-cart"]')
-    if(btn.classList.contains('gradient')) {
-      btn.classList.remove('gradient')
-      btn.textContent = 'В корзине'
-      add_in_LS()
+    if (!e.target.closest('[data-btn="in-cart"]')) return;
+    let btn = e.target.closest('[data-btn="in-cart"]');
+    let card = btn.closest('.main__block');
+    let id = card.id;
+
+    if (btn.classList.contains('gradient')) {
+      btn.classList.remove('gradient');
+      btn.textContent = 'В корзине';
+      add_in_LS(id);
     } else {
-      btn.classList.add('gradient')
-      btn.textContent = 'В корзину'
-      del_from_LS()
+      btn.classList.add('gradient');
+      btn.textContent = 'В корзину';
+      del_from_LS(id);
     }
-    
   }
-  function add_in_LS() {}
-  function del_from_LS() {}
+  function add_in_LS(id) {
+    let arr = localStorage.getItem('product-in-cart') || '[]'
+    arr = JSON.parse(arr)
+    arr.push(id)
+    let set = new Set(arr)
+    arr = set_to_arr(set)
+    arr = JSON.stringify(arr)
+    localStorage.setItem('product-in-cart', arr)
+  }
+  function del_from_LS(id) {
+    let arr = localStorage.getItem('product-in-cart') || '[]'
+    arr = JSON.parse(arr)
+    let set = new Set(arr)
+    set.delete(id)
+    arr = set_to_arr(set)
+    arr = JSON.stringify(arr)
+    localStorage.setItem('product-in-cart', arr)
+  }
+  function set_to_arr(set) {
+    let arr = []
+    for (let el of set) arr.push(el)
+    return arr
+  }
 })();
