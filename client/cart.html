@@ -113,9 +113,9 @@
         <div class="cart__data">
           <div class="cart__area">
             <h1 class="h1">Корзина</h1>
-            <p class="cart__count-product">2 товара</p>
+            <p class="cart__count-product">0 товара</p>
             <div id="product-list">
-              <div class="cart__list">
+              <!-- <div class="cart__list">
                 <div class="cart__list-left">
                   <div class="cart__photo-block">
                     <img
@@ -143,17 +143,17 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="cart__area">
             <h2>Списать бонусы</h2>
             <label class="label__radio">
-              <input type="radio" class="radio" name="bonus" checked />
+              <input type="radio" class="radio" name="bonus" value="true" checked />
               <span class="label__span">Списать</span>
             </label>
             <label class="label__radio">
-              <input type="radio" class="radio" name="bonus" />
+              <input type="radio" class="radio" name="bonus" value="false" />
               <span class="label__span">Не списывать</span>
             </label>
           </div>
@@ -165,11 +165,11 @@
             </label>
             <h2>Способ оплаты</h2>
             <label class="label__radio">
-              <input type="radio" class="radio" name="pay" checked />
+              <input type="radio" class="radio" name="discount" value="true" checked />
               <span class="label__span">Наличные (3% скидка)</span>
             </label>
             <label class="label__radio">
-              <input type="radio" class="radio" name="pay" />
+              <input type="radio" class="radio" name="discount" value="false" />
               <span class="label__span">Рассрочка</span>
             </label>
           </div>
@@ -179,21 +179,21 @@
             <h2 class="h2">Ваш заказ</h2>
             <div class="cart__total-list">
               <p>Сумма</p>
-              <p class="cart__total-sum">400 руб</p>
+              <p class="cart__total-sum" id="total-sum">0 руб</p>
             </div>
             <div class="cart__total-list">
-              <p>Сидка за наличку</p>
-              <p class="cart__total-sum">400 руб</p>
+              <p>Скидка за наличку</p>
+              <p class="cart__total-sum" id="discount">0 руб</p>
             </div>
             <div class="cart__total-list">
               <p>Бонус</p>
-              <p class="cart__total-sale">-100 руб.</p>
+              <p class="cart__total-sale" id="bonus">0 руб</p>
             </div>
             <div class="cart__total-list bold">
               <p>Итого</p>
-              <p class="cart__total-result" id="total-sum">руб.</p>
+              <p class="cart__total-result" id="final-sum">0 руб</p>
             </div>
-            <button class="btn large">Оформить заказ</button>
+            <button class="btn large gradient" id="btn-offer">Оформить заказ</button>
             <p class="offer">
               Нажимая на кнопку, я даю свое согласие на обработку персональных
               данных
