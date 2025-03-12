@@ -1,5 +1,8 @@
+
 import { get_nomenclatures } from "./API/nomenclatures/index.js"
 import { get_suppliers } from "./API/suppliers/index.js"
+import { set_order } from "./API/orders/index.js"
+
 (async function () {
   const log = console.log;
   const section = document.querySelector('#cart')
@@ -10,26 +13,60 @@ import { get_suppliers } from "./API/suppliers/index.js"
   const final_sum_el = section.querySelector('#final-sum')
   const count_prod_el = section.querySelector('.cart__count-product')
   const btn_offer = section.querySelector('#btn-offer')
+  const comment_el = section.querySelector('#comment')
   
-  
-
   let nomenclatures = await get_nomenclatures()
   let suppliers = await get_suppliers()
   
   let products_id = []
   products_id = get_from_LS()
+  let total_sum_cart = 0
+  let final_sum_cart = 0
+
   let is_bonus = true
   let bonus = 100
   let is_discount = true
   render_list()
   calc_total_sum()
   count_prod()
+  empty_cart()
   section.addEventListener('click', del_prod)
   section.addEventListener('click', choice_minus)
   section.addEventListener('click', choice_plus)
   section.addEventListener('click', change_radio)
   section.addEventListener('click', change_discount)
+  btn_offer.addEventListener('click', create_order)
 
+  function empty_cart() {
+    let products = get_from_LS()
+    if(products.length == 0) {
+      alert('Корзина пуста')
+      location.href = '/'
+    }
+  }
+  async function create_order() {
+    if(!btn_offer.classList.contains('gradient')) return
+    let order = {}
+    const list = section.querySelectorAll('.cart__list')
+    for(let el of list) {
+      let id = el.id
+      let value_el = el.querySelector('.cart__choice-value')
+      let count = value_el.textContent
+      order[id] = count
+    }
+    if(is_bonus) order.bonus = bonus
+    order.is_discount = is_discount
+    order.comment = comment_el.value
+    order.total_sum = total_sum_cart
+    order.final_sum = final_sum_cart
+
+    let answer = await set_order(order)
+    if(answer) {
+      alert(answer)
+      localStorage.setItem('product-in-cart', '[]')
+      setTimeout(()=>{location.href = '/'}, 1000)
+    }
+  }
   function change_radio(e) {
     if(!e.target.closest('input[name=bonus]')) return
     if(e.target.value == 'true') is_bonus = true
@@ -103,6 +140,8 @@ import { get_suppliers } from "./API/suppliers/index.js"
     }
     if(final_sum < 0) final_sum = 0
     final_sum_el.textContent = final_sum + ' руб'
+    total_sum_cart = sum
+    final_sum_cart = final_sum
   }
   function del_prod(e) {
     if(!e.target.closest('#del-icon')) return

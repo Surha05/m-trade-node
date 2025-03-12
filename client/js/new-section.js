@@ -7,7 +7,7 @@ import { get_suppliers } from "./API/suppliers/index.js"
   const log = console.log
   let nomenclatures = await get_nomenclatures()
   nomenclatures = nomenclatures.filter(el => el.new)
-  nomenclatures.length = 12;
+  if(nomenclatures.length > 12) nomenclatures.length = 12;
   let suppliers = await get_suppliers()
   
 
