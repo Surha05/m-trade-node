@@ -32,5 +32,10 @@ function add_order(req, res) {
   fs.writeFileSync(path_orders_DB, orders)
   res.send('Заказ в обработке. Вы перенаправитесь на главную страницу')
 }
+function get_order(req, res) {
+  let orders = fs.readFileSync(path_orders_DB, 'utf-8')
+  res.send(orders)
+}
 
 module.exports.add_order = add_order
+module.exports.get_order = get_order

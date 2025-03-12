@@ -17,6 +17,7 @@ const { get_suppliers } = require('./API/suppliers/index')
 const { get_contractors } = require('./API/contractors/index')
 const { get_nomenclatures } = require('./API/nomenclatures/index')
 const { add_order } = require('./API/orders/index')
+const { get_order } = require('./API/orders/index')
 
 // переменные
 const server = express()
@@ -35,6 +36,8 @@ server.get('/API/suppliers/get', get_suppliers)
 server.get('/API/contractors/get', get_contractors)
 server.get('/API/nomenclatures/get', get_nomenclatures)
 server.get('/API/orders/set', add_order)
+server.get('/API/orders/get', get_order)
+
 server.use(express.static(path_client))
 
 // функции

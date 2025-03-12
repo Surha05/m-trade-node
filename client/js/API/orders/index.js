@@ -5,5 +5,12 @@ async function set_order(order) {
   res = await res.text()
   return res
 }
+async function get_orders() {
+  const url = '/API/orders/get'
+  const response = await fetch(url)
+  let data = await response.text()
+  data = JSON.parse(data) || undefined
+  return data
+}
 
-export { set_order }
+export { set_order, get_orders }

@@ -47,12 +47,13 @@ import { set_order } from "./API/orders/index.js"
   async function create_order() {
     if(!btn_offer.classList.contains('gradient')) return
     let order = {}
+    order.items = []
     const list = section.querySelectorAll('.cart__list')
     for(let el of list) {
       let id = el.id
       let value_el = el.querySelector('.cart__choice-value')
       let count = value_el.textContent
-      order[id] = count
+      order.items.push({[id]: count})
     }
     if(is_bonus) order.bonus = bonus
     order.is_discount = is_discount
