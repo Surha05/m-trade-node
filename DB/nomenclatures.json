@@ -57,7 +57,9 @@
     "supplier_guid": "supplier-002",
     "price": "35",
     "bonus": "20",
-    "img": "твикс.jpg"
+    "img": "твикс.jpg",
+    "new":"true",
+    "hit":"true"
   },
   {
     "guid": "nomen-007", 
@@ -66,7 +68,8 @@
     "supplier_guid": "supplier-003",
     "price": "650",
     "bonus": "15",
-    "img": "арабика.webp"
+    "img": "арабика.webp",
+    "new":"true"
   },
   {
     "guid": "nomen-008", 
@@ -75,7 +78,10 @@
     "supplier_guid": "supplier-003",
     "price": "165",
     "bonus": "10",
-    "img": "аббас.jpg"
+    "img": "аббас.jpg",
+    "new":"true",
+    "hit":"true",
+    "sale":"true"
   },
   {
     "guid": "nomen-009", 
@@ -84,6 +90,7 @@
     "supplier_guid": "supplier-003",
     "price": "140",
     "bonus": "0",
-    "img": "какао.jpg"
+    "img": "какао.jpg",
+    "sale":"true"
   }
 ]
