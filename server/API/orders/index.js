@@ -36,6 +36,33 @@ function get_order(req, res) {
   let orders = fs.readFileSync(path_orders_DB, 'utf-8')
   res.send(orders)
 }
+function get_orders_by_hash(req, res) {
+  let contractor
+  const coockie = getCookie(req);
+  if (coockie === undefined) {
+    res.send('')
+    return;
+  }
+  let contractors = fs.readFileSync(path_contractors_DB, 'utf-8');
+  contractors = JSON.parse(contractors);
+  for (let client of contractors) {
+    const password = client.password;
+    const hash = md5(password);
+    if (hash == coockie) {
+      contractor = client
+      break
+    }
+  }
+  if(!contractor) {
+    res.send('')
+    return
+  }
+  let orders = fs.readFileSync(path_orders_DB, 'utf-8')
+  orders = JSON.parse(orders)
+  orders.filter(el => el.contractor == contractor.guid)
+  res.send(orders)
+}
 
 module.exports.add_order = add_order
 module.exports.get_order = get_order
+module.exports.get_orders_by_hash = get_orders_by_hash
