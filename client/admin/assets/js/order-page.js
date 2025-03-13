@@ -10,7 +10,6 @@ import { get_contractor_by_hash } from "/js/API/contractors/index.js"
 
   // let nomenclatures = await get_nomenclatures()
   // let suppliers = await get_suppliers()
-  // let orders = await get_orders()
   let client = await get_contractor_by_hash()
   let orders = await get_orders_by_hash()
   
@@ -27,7 +26,7 @@ import { get_contractor_by_hash } from "/js/API/contractors/index.js"
     let date = get_date(el.id)
     let sum = el.final_sum
     return `
-    <div class="table-section__row">
+    <div class="table-section__row" id="${el.id}">
       <div class="w150">${date}</div>
       <div class="w150 tar">${sum} руб</div>
     </div>
