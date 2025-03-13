@@ -5,5 +5,12 @@ async function get_contractors() {
   data = JSON.parse(data) || undefined
   return data
 }
+async function get_contractor_by_hash() {
+  const url = '/API/contractors/get/by_hash'
+  const response = await fetch(url)
+  let data = await response.text()
+  data = JSON.parse(data) || undefined
+  return data
+}
 
-export { get_contractors }
+export { get_contractors, get_contractor_by_hash }
