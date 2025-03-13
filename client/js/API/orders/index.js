@@ -12,5 +12,12 @@ async function get_orders() {
   data = JSON.parse(data) || undefined
   return data
 }
+async function get_orders_by_hash() {
+  const url = '/API/orders/get/by_hash'
+  const response = await fetch(url)
+  let data = await response.text()
+  data = JSON.parse(data) || undefined
+  return data
+}
 
-export { set_order, get_orders }
+export { set_order, get_orders, get_orders_by_hash }

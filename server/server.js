@@ -14,11 +14,9 @@ const { auth } = require('./my_modules/routes/auth')
 const { main } = require('./my_modules/routes/main')
 const { path_client } = require('./my_modules/pathes')
 const { get_suppliers } = require('./API/suppliers/index')
-const { get_contractors } = require('./API/contractors/index')
-const { get_contractor_by_hash } = require('./API/contractors/index')
+const { get_contractors, get_contractor_by_hash } = require('./API/contractors/index')
 const { get_nomenclatures } = require('./API/nomenclatures/index')
-const { add_order } = require('./API/orders/index')
-const { get_order } = require('./API/orders/index')
+const { add_order, get_orders_by_hash, get_order } = require('./API/orders/index')
 
 
 // переменные
@@ -40,6 +38,7 @@ server.get('/API/contractors/get/by_hash', get_contractor_by_hash)
 server.get('/API/nomenclatures/get', get_nomenclatures)
 server.get('/API/orders/set', add_order)
 server.get('/API/orders/get', get_order)
+server.get('/API/orders/get/by_hash', get_orders_by_hash)
 
 
 server.use(express.static(path_client))
