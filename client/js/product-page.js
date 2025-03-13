@@ -7,7 +7,9 @@ import { get_suppliers } from "./API/suppliers/index.js"
     let bonus = section.querySelector('#bonus')
     let title = section.querySelector('#title')
     let category_el = section.querySelector('#category')
-
+    const bread_crumbs = document.querySelector('#bread_crumbs')
+    let bread_crumbs_title = bread_crumbs.querySelector('.crumbs_title')
+    let bread_crumbs_category = bread_crumbs.querySelector('.crumbs_category')
 
     const log = console.log
     let nomenclatures = await get_nomenclatures()
@@ -25,6 +27,8 @@ import { get_suppliers } from "./API/suppliers/index.js"
     bonus.innerHTML = `${product.bonus} <i class='bx bx-ruble' ></i>`
     title.textContent = product.name
     category_el.textContent = category.name
+    bread_crumbs_title.textContent = product.name
+    bread_crumbs_category.textContent = category.name
 
     function getCategory(id) {
     return suppliers.find(el => el.guid == id)
