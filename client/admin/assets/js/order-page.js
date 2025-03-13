@@ -7,6 +7,9 @@ import { get_contractor_by_hash } from "/js/API/contractors/index.js"
   const log = console.log
   const client_name_el = document.querySelector('#client-name')
   const order_list_el = document.querySelector('#order-list')
+  const order_count_el = document.querySelector('#order-count')
+  const all_total_sum_el = document.querySelector('#all-total-sum')
+  
 
   // let nomenclatures = await get_nomenclatures()
   // let suppliers = await get_suppliers()
@@ -15,7 +18,20 @@ import { get_contractor_by_hash } from "/js/API/contractors/index.js"
   
   render_name_client()
   render_order_list()
+  render_order_count()
+  render_all_total_sum()
 
+  function render_all_total_sum() {
+    let all_sum = 0
+    for(let el of orders) {
+      let sum = el.total_sum || 0
+      all_sum += sum
+    }
+    all_total_sum_el.innerHTML = all_sum + ' &#8381;'
+  }
+  function render_order_count() {
+    order_count_el.textContent = (orders.length || 0) + ' шт'
+  }
   function render_order_list() {
     order_list_el.innerHTML = ''
     for(let el of orders) {
