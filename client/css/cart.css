@@ -17,6 +17,7 @@
   padding: 30px;
   border-radius: 30px;
   margin-bottom: 30px;
+
 }
 .h1 {
   margin-bottom: 20px;
@@ -143,6 +144,11 @@ h2 {
 .cart__total {
   width: 350px;
   flex-shrink: 0;
+
+}
+.cart__sticky{
+  position:sticky;
+  top: 80px;
 }
 .cart__total-list {
   display: flex;

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M-Trade</title>
+  <link rel="stylesheet" href="/css/var.css">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/standart.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/menu.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/card.css">
+  <link rel="stylesheet" href="/css/mob-menu.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__logo">
+        <a href="/" class="header__logo-link">M-Trade</a>
+      </div>
+      <div class="header__gamb">
+        <img src="/img/icon/menu-bar.png" class="header__gamb-icon" />
+      </div>
+      <input class="header__search" type="search" placeholder="Найти в M-Trade" autocomplete="off" />
+      <div class="header__block">
+        <a href="/admin/">
+          <i class="bx bx-user-circle"></i>
+        </a>
+        <!-- <p class="header__user-name">Войти</p> -->
+      </div>
+      <div class="header__block">
+        <a href="/cart.html">
+          <i class="bx bx-cart"></i>
+          <p class="header__prod-count" id="prod-count">0</p>
+          <!-- <p class="header__cart-name">Корзина</p> -->
+        </a>
+      </div>
+      <div class="header__block">
+        <a href="tel:89637923931">
+          <i class="bx bx-phone"></i>
+          <!-- <p class="header__cart-name">Корзина</p> -->
+        </a>
+      </div>
+      <div class="header__block">
+        <a href="" id="exit-account">
+          <i class="bx bx-exit"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="menu__wrapper"></div>
+  <menu class="menu">
+    <ul>
+      <li class="bg-gradient"><a href="">Товары со скидками</a></li>
+      <div id="sidebar-menu">
+        <!-- <li><a href="/category.html">Соки</a></li> -->
+      </div>
+      <div class="underline"></div>
+      <li><a href="/contact.html">Контакты</a></li>
+    </ul>
+  </menu>
+
+  <section class="mob-menu">
+    <div class="mob-menu__gamb">
+      <i class="bx bx-menu" class="mob-menu__gamb-icon"></i>
+    </div>
+    <div class="mob-menu__search">
+      <a href="#">
+        <i class="bx bx-search"></i>
+      </a>
+    </div>
+    <div class="mob-menu__user">
+      <a href="/admin/">
+        <i class="bx bx-user-circle"></i>
+      </a>
+    </div>
+    <div class="mob-menu__cart">
+      <a href="/cart.html">
+        <i class="bx bx-cart"></i>
+      </a>
+    </div>
+    <div class="mob-menu__contact">
+      <a href="tel:+79894736346">
+        <i class="bx bx-phone"></i>
+      </a>
+    </div>
+
+    <div class="header__block">
+      <a href="" id="exit-account">
+        <i class='bx bx-exit'></i>
+      </a>
+    </div>
+    </div>
+    </header>
+    <div class="menu__wrapper"></div>
+    <menu class="menu">
+      <ul>
+        <li class="bg-gradient"><a href="">Товары со скидками</a></li>
+        <div id="sidebar-menu">
+          <!-- <li><a href="/category.html">Соки</a></li> -->
+        </div>
+        <div class="underline"></div>
+        <li><a href="/contact.html">Контакты</a></li>
+      </ul>
+    </menu>
+
+  </section>
+
+  <script type="module" src="/js/menu.js"></script>
+  <script type="module" src="/section/header/header.js"></script>
+  <script src="/section/header/mob-menu.js"></script>
+  <section class="container sale" id="stock-section">
+    <h1>Акции</h1>
+    <div class="main__column">
+
+    </div>
+    <!-- <button class="btn-second main__btn"><a href="../../sale.php">Посмотреть еще</a></button> -->
+  </section>
+  <script type="module" src="/js/stock-page.js"></script>
+  <script src="/js/add-in-cart.js"></script>
+</body>
+
+</html>
