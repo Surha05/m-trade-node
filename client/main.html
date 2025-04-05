@@ -1,94 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>M-Trade</title>
-    <link rel="stylesheet" href="/css/var.css" />
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/standart.css" />
-    <link rel="stylesheet" href="/css/header.css" />
-    <link rel="stylesheet" href="/css/menu.css" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/card.css" />
-    <link rel="stylesheet" href="/css/mob-menu.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header class="header" id="header">
-      <div class="container">
-        <div class="header__logo">
-          <a href="/" class="header__logo-link">M-Trade</a>
-        </div>
-        <div class="header__gamb">
-          <img src="/img/icon/menu-bar.png" class="header__gamb-icon" />
-        </div>
-        <input
-          class="header__search"
-          type="search"
-          placeholder="Найти в M-Trade"
-          autocomplete="off"
-        />
-        <div class="header__block">
-          <a href="/admin/">
-            <i class="bx bx-user-circle"></i>
-          </a>
-          <!-- <p class="header__user-name">Войти</p> -->
-        </div>
-        <div class="header__block">
-          <a href="/cart.html">
-            <i class="bx bx-cart"></i>
-            <p class="header__prod-count" id="prod-count">0</p>
-          </a>
-        </div>
-        <div class="header__block">
-          <a href="tel:89637923931">
-            <i class="bx bx-phone"></i>
-            <!-- <p class="header__cart-name">Корзина</p> -->
-          </a>
-        </div>
-        <div class="header__block">
-          <a href="" id="exit-account">
-            <i class="bx bx-exit"></i>
-          </a>
-        </div>
-      </div>
-    </header>
-    <div class="menu__wrapper"></div>
-    <menu class="menu">
-      <ul>
-        <li class="bg-gradient"><a href="">Товары со скидками</a></li>
-        <div id="sidebar-menu">
-          <!-- <li><a href="/category.html">Соки</a></li> -->
-        </div>
-        <div class="underline"></div>
-        <li><a href="/contact.html">Контакты</a></li>
-      </ul>
-    </menu>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M-Trade</title>
+  <link rel="stylesheet" href="/css/var.css" />
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/standart.css" />
+  <link rel="stylesheet" href="/css/header.css" />
+  <link rel="stylesheet" href="/css/menu.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/card.css" />
+  <link rel="stylesheet" href="/css/mob-menu.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
 
-    <section class="mob-menu">
-      <div class="mob-menu__gamb">
-        <i class="bx bx-menu" class="mob-menu__gamb-icon"></i>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__logo">
+        <a href="/" class="header__logo-link">M-Trade</a>
       </div>
-      <div class="mob-menu__search">
-        <a href="#">
-          <i class="bx bx-search"></i>
-        </a>
+      <div class="header__gamb">
+        <img src="/img/icon/menu-bar.png" class="header__gamb-icon" />
       </div>
-      <div class="mob-menu__user">
+      <input class="header__search" type="search" placeholder="Найти в M-Trade" autocomplete="off" />
+      <div class="header__block">
         <a href="/admin/">
           <i class="bx bx-user-circle"></i>
         </a>
         <!-- <p class="header__user-name">Войти</p> -->
       </div>
-      <div class="mob-menu__cart">
+      <div class="header__block">
         <a href="/cart.html">
           <i class="bx bx-cart"></i>
-          <!-- <p class="header__cart-name">Корзина</p> -->
+          <p class="header__prod-count" id="prod-count">0</p>
         </a>
       </div>
       <div class="header__block">
@@ -102,27 +49,89 @@
           <i class="bx bx-exit"></i>
         </a>
       </div>
-      <div class="mob-menu__contact">
-        <a href="tel:+79894736346">
-          <i class="bx bx-phone"></i>
-        </a>
+    </div>
+  </header>
+  <div class="menu__wrapper"></div>
+  <menu class="menu">
+    <ul>
+      <li class="bg-gradient"><a href="">Товары со скидками</a></li>
+      <div id="sidebar-menu">
+        <!-- <li><a href="/category.html">Соки</a></li> -->
       </div>
-    </section>
+      <div class="underline"></div>
+      <li><a href="/contact.html">Контакты</a></li>
+    </ul>
+  </menu>
 
-    <script type="module" src="/js/menu.js"></script>
-    <script type="module" src="/section/header/header.js"></script>
-    <script src="/section/header/mob-menu.js"></script>
+  <section class="mob-menu">
+    <div class="mob-menu__gamb">
+      <i class="bx bx-menu" class="mob-menu__gamb-icon"></i>
+    </div>
+    <div class="mob-menu__search">
+      <a href="#">
+        <i class="bx bx-search"></i>
+      </a>
+    </div>
+    <div class="mob-menu__user">
+      <a href="/admin/">
+        <i class="bx bx-user-circle"></i>
+      </a>
+      <!-- <p class="header__user-name">Войти</p> -->
+    </div>
+    <div class="mob-menu__cart">
+      <a href="/cart.html">
+        <i class="bx bx-cart"></i>
+        <!-- <p class="header__cart-name">Корзина</p> -->
+      </a>
+    </div>
+    <div class="header__block">
+      <a href="tel:89637923931">
+        <i class="bx bx-phone"></i>
+        <!-- <p class="header__cart-name">Корзина</p> -->
+      </a>
+    </div>
+    <div class="header__block">
+      <a href="" id="exit-account">
+        <i class="bx bx-exit"></i>
+      </a>
+    </div>
+    <div class="mob-menu__contact">
+      <a href="tel:+79894736346">
+        <i class="bx bx-phone"></i>
+      </a>
+    </div>
+  </section>
 
-    <section class="container">
-      <img src="/img/bg/banner-img.jpg" alt="" class="banner" />
-      <div class="line gradient">
-        <p class="line__text">Скидка 2% при покупке за наличные</p>
-      </div>
-    </section>
-    <section class="container" id="sale-section">
-      <h2 class="main__h2">Скидки</h2>
-      <div class="main__column">
-        <!-- <div class="main__block">
+  <script type="module" src="/js/menu.js"></script>
+  <script type="module" src="/section/header/header.js"></script>
+  <script src="/section/header/mob-menu.js"></script>
+
+  <section class="container">
+    <img src="/img/bg/banner-img.jpg" alt="" class="banner" />
+    <div class="line gradient">
+      <p class="line__text">Скидка 2% при покупке за наличные</p>
+    </div>
+  </section>
+  <section class="container" id="stock-section">
+    <h2 class="main__h2">Акции</h2>
+    <div class="main__column"></div>
+    <button class="btn-second main__btn">
+      <a href="../../stock.html">Посмотреть еще</a>
+    </button>
+  </section>
+  <script type="module" src="/js/stock-section.js"></script>
+  <section class="container" id="hit-section">
+    <h2 class="main__h2">Хит продаж</h2>
+    <div class="main__column"></div>
+    <button class="btn-second main__btn">
+      <a href="../../hit.html">Посмотреть еще</a>
+    </button>
+  </section>
+  <script type="module" src="/js/hit-section.js"></script>
+  <section class="container" id="sale-section">
+    <h2 class="main__h2">Скидки</h2>
+    <div class="main__column">
+      <!-- <div class="main__block">
           <a href="/card.html">
             <img src="img/bg/img.webp" alt="" class="block__img" />
           </a>
@@ -152,38 +161,32 @@
 
           <button class="btn out-of-stock__btn gradient">Нет в наличии</button>
         </div> -->
-      </div>
-      <button class="btn-second main__btn">
-        <a href="../../sale.html">Посмотреть еще</a>
-      </button>
-    </section>
-    <script type="module" src="/js/sale-section.js"></script>
-
-    <section class="container" id="new-section">
-      <h2 class="main__h2">Новинки</h2>
-      <div class="main__column"></div>
-      <button class="btn-second main__btn">
-        <a href="../../new-product.html">Посмотреть еще</a>
-      </button>
-    </section>
-    <script type="module" src="/js/new-section.js"></script>
-    <section class="container" id="hit-section">
-      <h2 class="main__h2">Хит продаж</h2>
-      <div class="main__column"></div>
-      <button class="btn-second main__btn">
-        <a href="../../hit.html">Посмотреть еще</a>
-      </button>
-    </section>
-    <script type="module" src="/js/hit-section.js"></script>
-    <div class="cookies">
-      <p class="cookies__text">
-        Мы используем cookies, чтобы сохранять ваш поиск, рекомендовать полезное
-        и создавать другие удобства на сайте
-      </p>
-      <button class="btn cookies__btn">Окей</button>
     </div>
+    <button class="btn-second main__btn">
+      <a href="../../sale.html">Посмотреть еще</a>
+    </button>
+  </section>
+  <script type="module" src="/js/sale-section.js"></script>
 
-    <script src="/js/cookies.js"></script>
-    <script src="/js/add-in-cart.js"></script>
-  </body>
+  <section class="container" id="new-section">
+    <h2 class="main__h2">Новинки</h2>
+    <div class="main__column"></div>
+    <button class="btn-second main__btn">
+      <a href="../../new-product.html">Посмотреть еще</a>
+    </button>
+  </section>
+  <script type="module" src="/js/new-section.js"></script>
+
+  <div class="cookies">
+    <p class="cookies__text">
+      Мы используем cookies, чтобы сохранять ваш поиск, рекомендовать полезное
+      и создавать другие удобства на сайте
+    </p>
+    <button class="btn cookies__btn">Окей</button>
+  </div>
+
+  <script src="/js/cookies.js"></script>
+  <script src="/js/add-in-cart.js"></script>
+</body>
+
 </html>

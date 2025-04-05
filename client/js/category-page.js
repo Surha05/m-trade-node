@@ -16,19 +16,23 @@ import { get_suppliers } from "./API/suppliers/index.js"
   })
 
   for (let el of nomenclatures) {
+    let new_price = el.price - el.price * 0.2
     main.innerHTML += `
       <div class="main__block" id="${el.guid}">
         <a href="/card.html?id=${el.guid}">
           <img src="/img/product/${el.img}" alt="" class="block__img" />
         </a>
         <div class="block__prices">
-          <span class="block__price">${el.price} руб.</span>
+        <div class="block__prices-left">
+          <span class="block__price-old">${el.price} руб.</span>
+          <span class="block__price">${new_price} руб.</span>
+          </div>
           <span class="block__bonus" title="bonus">
             ${el.bonus} руб.
           </span>
         </div>
         <h3 class="block__name">${el.name}</h3>
-        <button class="btn block__btn gradient">В корзину</button>
+        <button data-btn="in-cart" class="btn block__btn gradient">В корзину</button>
       </div>
     `
 

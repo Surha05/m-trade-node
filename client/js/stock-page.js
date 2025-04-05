@@ -1,13 +1,12 @@
 import { get_nomenclatures } from "./API/nomenclatures/index.js"
 import { get_suppliers } from "./API/suppliers/index.js"
 (async function () {
-  const section = document.querySelector('#sale-section')
+  const section = document.querySelector('#stock-section')
   const main = section.querySelector('.main__column')
 
   const log = console.log
   let nomenclatures = await get_nomenclatures()
-  nomenclatures = nomenclatures.filter(el => el.sale)
-  if (nomenclatures.length > 12) nomenclatures.length = 12;
+  nomenclatures = nomenclatures.filter(el => el.stock)
   let suppliers = await get_suppliers()
 
 
@@ -24,7 +23,7 @@ import { get_suppliers } from "./API/suppliers/index.js"
           <span class="block__price">${new_price} руб.</span>
           </div>
           <span class="block__bonus" title="bonus">
-            ${el.bonus} руб.
+            ${el.stock}.
           </span>
         </div>
         <a href="/category.html?id=${el.supplier_guid}" class="block__desc">${get_category(el.supplier_guid)}</a>

@@ -92,5 +92,45 @@
     "bonus": "0",
     "img": "какао.jpg",
     "sale":"true"
+  },
+  {
+    "guid": "nomen-009", 
+    "name": "Какао детский", 
+    "code_1c": "T009", 
+    "supplier_guid": "supplier-003",
+    "price": "140",
+    "bonus": "0",
+    "img": "какао.jpg",
+    "stock":"1+1"
+  },
+  {
+    "guid": "nomen-009", 
+    "name": "Какао детский", 
+    "code_1c": "T009", 
+    "supplier_guid": "supplier-003",
+    "price": "140",
+    "bonus": "0",
+    "img": "какао.jpg",
+    "stock":"1+1"
+  },
+  {
+    "guid": "nomen-009", 
+    "name": "Какао детский", 
+    "code_1c": "T009", 
+    "supplier_guid": "supplier-003",
+    "price": "140",
+    "bonus": "0",
+    "img": "какао.jpg",
+    "stock":"5+1"
+  },
+  {
+    "guid": "nomen-009", 
+    "name": "Какао детский", 
+    "code_1c": "T009", 
+    "supplier_guid": "supplier-003",
+    "price": "140",
+    "bonus": "0",
+    "img": "какао.jpg",
+    "stock":""
   }
 ]
