@@ -24,7 +24,9 @@ import { get_suppliers } from "./API/suppliers/index.js"
 
     img.src = `/img/product/${product.img}`
     price.textContent = `${product.price} руб`
-    bonus.innerHTML = `${product.bonus} <i class='bx bx-ruble' ></i>`
+    if(product.stock)
+        {bonus.innerHTML = product.stock}else{bonus.style.display = 'none'}
+
     title.textContent = product.name
     category_el.textContent = category.name
     bread_crumbs_title.textContent = product.name

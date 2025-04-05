@@ -11,10 +11,10 @@ import { get_suppliers } from "./API/suppliers/index.js"
 
 
   for (let el of nomenclatures) {
-    let new_price = el.price - el.price * 0.2
+    let new_price = Math.round( el.price - el.price * 0.02)
     main.innerHTML += `
       <div class="main__block" id="${el.guid}">
-        <a href="/card.html?id=${el.guid}">
+        <a href="/card.html?id=${el.guid}" class="block__link">
           <img src="/img/product/${el.img}" alt="" class="block__img" />
         </a>
         <div class="block__prices">
@@ -23,7 +23,7 @@ import { get_suppliers } from "./API/suppliers/index.js"
           <span class="block__price">${new_price} руб.</span>
           </div>
           <span class="block__bonus" title="bonus">
-            ${el.stock}.
+            ${el.stock}
           </span>
         </div>
         <a href="/category.html?id=${el.supplier_guid}" class="block__desc">${get_category(el.supplier_guid)}</a>
