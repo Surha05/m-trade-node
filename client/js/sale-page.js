@@ -19,8 +19,9 @@ import { get_suppliers } from "./API/suppliers/index.js"
         </a>
         <div class="block__prices">
         <div class="block__prices-left">
-          <span class="block__price-old">${el.price} руб.</span>
+
           <span class="block__price">${new_price} руб.</span>
+                    <span class="block__price-old">${el.price} руб.</span>
           </div>
 
         </div>

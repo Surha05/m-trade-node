@@ -36,6 +36,7 @@
     border-radius: 15px;
     margin-bottom: 5px;
 }
+
 .block__price{
     font-size: 20px;
     /* margin-bottom: 15px; */
@@ -68,6 +69,10 @@
 }
 .block__price-old{
     text-decoration:line-through;
+    font-size: 15px;
+    color: #aaa;
+    margin-left: 5px;
+
 }
 .line{
     height: 50px;

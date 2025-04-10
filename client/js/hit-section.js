@@ -1,5 +1,5 @@
 import { get_nomenclatures } from "./API/nomenclatures/index.js"
-import { get_suppliers} from "./API/suppliers/index.js"
+import { get_suppliers } from "./API/suppliers/index.js"
 (async function () {
   const section = document.querySelector('#hit-section')
   const main = section.querySelector('.main__column')
@@ -7,12 +7,12 @@ import { get_suppliers} from "./API/suppliers/index.js"
   const log = console.log
   let nomenclatures = await get_nomenclatures()
   nomenclatures = nomenclatures.filter(el => el.hit)
-  if(nomenclatures.length > 12) nomenclatures.length = 12; 
+  if (nomenclatures.length > 12) nomenclatures.length = 12;
   let suppliers = await get_suppliers()
-  
 
-  for(let el of nomenclatures) {
-    let new_price = Math.round( el.price - el.price * 0.02)
+
+  for (let el of nomenclatures) {
+    let new_price = Math.round(el.price - el.price * 0.02)
     main.innerHTML += `
       <div class="main__block" id="${el.guid}">
         <a href="/card.html?id=${el.guid}" class="block__link">
@@ -20,8 +20,9 @@ import { get_suppliers} from "./API/suppliers/index.js"
         </a>
         <div class="block__prices">
         <div class="block__prices-left">
-          <span class="block__price-old">${el.price} руб.</span>
+
           <span class="block__price">${new_price} руб.</span>
+                    <span class="block__price-old">${el.price} руб.</span>
           </div>
 
         </div>
