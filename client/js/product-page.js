@@ -10,6 +10,7 @@ import { get_suppliers } from "./API/suppliers/index.js"
     const bread_crumbs = document.querySelector('#bread_crumbs')
     let bread_crumbs_title = bread_crumbs.querySelector('.crumbs_title')
     let bread_crumbs_category = bread_crumbs.querySelector('.crumbs_category')
+    let desc = section.querySelector('#desc')
 
     const log = console.log
     let nomenclatures = await get_nomenclatures()
@@ -23,12 +24,16 @@ import { get_suppliers } from "./API/suppliers/index.js"
     let category = getCategory(product.supplier_guid)
 
     img.src = `/img/product/${product.img}`
-    price.textContent = `${product.price} руб`
-    bonus.innerHTML = `${product.bonus} <i class='bx bx-ruble' ></i>`
+    price.textContent = `${Math.round(product.price - product.price*0.02)} руб`
+    if(product.stock)
+        {bonus.innerHTML = product.stock}else{bonus.style.display = 'none'}
+
     title.textContent = product.name
     category_el.textContent = category.name
     bread_crumbs_title.textContent = product.name
     bread_crumbs_category.textContent = category.name
+    desc.textContent = product.description
+
 
     function getCategory(id) {
     return suppliers.find(el => el.guid == id)

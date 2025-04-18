@@ -150,6 +150,16 @@ h2 {
   position:sticky;
   top: 80px;
 }
+.cart__price-old{
+  text-decoration:line-through;
+  font-size: 12px;
+  color: #aaa;
+  margin-left: 5px;
+
+}
+.cart__prices{
+  display: flex;
+}
 .cart__total-list {
   display: flex;
   justify-content: space-between;

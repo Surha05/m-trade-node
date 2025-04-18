@@ -1,13 +1,14 @@
 [
   {
     "guid": "nomen-001", 
-    "name": "Макароны Макфа", 
+    "name": "Макароны Макфа test", 
     "code_1c": "T001", 
     "supplier_guid": "supplier-001",
     "price": "65",
     "bonus": "10",
     "img": "makaron-makfa.webp",
-    "new":"true"
+    "new":"true",
+    "description":"makfa is a good for aubuabbu abubaubaubabuaub buabua ba buba ubauabuabb"
   },
   {
     "guid": "nomen-002", 
@@ -114,8 +115,8 @@
     "stock":"1+1"
   },
   {
-    "guid": "nomen-009", 
-    "name": "Какао детский", 
+    "guid": "nomen-100", 
+    "name": "Какаоi детский", 
     "code_1c": "T009", 
     "supplier_guid": "supplier-003",
     "price": "140",
@@ -128,8 +129,7 @@
     "name": "Какао детский", 
     "code_1c": "T009", 
     "supplier_guid": "supplier-003",
-    "price": "140",
-    "bonus": "0",
+    "price":"0",
     "img": "какао.jpg",
     "stock":""
   }
