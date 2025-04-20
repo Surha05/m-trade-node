@@ -18,7 +18,8 @@
     "price": "177",
     "bonus": "14",
     "img": "dariya.jpg",
-    "new":"true"
+    "new":"true",
+    "stock":"4+1"
   },
   {
     "guid": "nomen-003", 
@@ -28,7 +29,8 @@
     "price": "78",
     "bonus": "0",
     "img": "гречка.jpg",
-    "hit":"true"
+    "hit":"true",
+    "description":"Приготовлена из хороших плодов"
     
   },
   {
@@ -39,7 +41,8 @@
     "price": "45",
     "bonus": "0",
     "img": "сникерс.png",
-    "hit":"true"
+    "hit":"true",
+    "stock":"5+1"
   },
   {
     "guid": "nomen-005", 
@@ -60,7 +63,8 @@
     "bonus": "20",
     "img": "твикс.jpg",
     "new":"true",
-    "hit":"true"
+    "hit":"true",
+    "description":"твикс - сладкая парочка"
   },
   {
     "guid": "nomen-007", 
@@ -92,45 +96,7 @@
     "price": "140",
     "bonus": "0",
     "img": "какао.jpg",
-    "sale":"true"
-  },
-  {
-    "guid": "nomen-009", 
-    "name": "Какао детский", 
-    "code_1c": "T009", 
-    "supplier_guid": "supplier-003",
-    "price": "140",
-    "bonus": "0",
-    "img": "какао.jpg",
+    "sale":"true",
     "stock":"1+1"
-  },
-  {
-    "guid": "nomen-009", 
-    "name": "Какао детский", 
-    "code_1c": "T009", 
-    "supplier_guid": "supplier-003",
-    "price": "140",
-    "bonus": "0",
-    "img": "какао.jpg",
-    "stock":"1+1"
-  },
-  {
-    "guid": "nomen-100", 
-    "name": "Какаоi детский", 
-    "code_1c": "T009", 
-    "supplier_guid": "supplier-003",
-    "price": "140",
-    "bonus": "0",
-    "img": "какао.jpg",
-    "stock":"5+1"
-  },
-  {
-    "guid": "nomen-009", 
-    "name": "Какао детский", 
-    "code_1c": "T009", 
-    "supplier_guid": "supplier-003",
-    "price":"0",
-    "img": "какао.jpg",
-    "stock":""
   }
 ]
