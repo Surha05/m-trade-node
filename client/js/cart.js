@@ -185,7 +185,7 @@ import { set_order } from "./API/orders/index.js"
           <span class="cart__choice-plus">+</span>
         </div>
         <div class="cart__list-price">
-          <span id="sum-prod" class="cart__list-span">${price} руб.</span>
+          <span id="sum-prod" class="cart__list-span">${price} р</span>
           <div class="cart__del-block">
             <img src="/img/icon/trash.png" id="del-icon"/>
           </div>

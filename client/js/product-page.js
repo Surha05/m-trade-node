@@ -11,6 +11,7 @@ import { get_suppliers } from "./API/suppliers/index.js"
     let bread_crumbs_title = bread_crumbs.querySelector('.crumbs_title')
     let bread_crumbs_category = bread_crumbs.querySelector('.crumbs_category')
     let desc = section.querySelector('#desc')
+    let desc_title = section.querySelector('#desc-title')
 
     const log = console.log
     let nomenclatures = await get_nomenclatures()
@@ -24,14 +25,17 @@ import { get_suppliers } from "./API/suppliers/index.js"
     let category = getCategory(product.supplier_guid)
 
     img.src = `/img/product/${product.img}`
-    price.textContent = `${Math.round(product.price - product.price*0.02)} руб`
+    price.textContent = `${Math.round(product.price - product.price*0.02)} р`
     if(product.stock)
         {bonus.innerHTML = product.stock}else{bonus.style.display = 'none'}
 
     title.textContent = product.name
     category_el.textContent = category.name
+    category_el.href = `/category.html?id=${product.supplier_guid}`
     bread_crumbs_title.textContent = product.name
     bread_crumbs_category.textContent = category.name
+    bread_crumbs_category.href = `/category.html?id=${product.supplier_guid}`
+    console.log(product)
     desc.textContent = product.description
 
 

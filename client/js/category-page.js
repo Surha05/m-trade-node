@@ -6,6 +6,7 @@ import { get_suppliers } from "./API/suppliers/index.js"
   let suppliers = await get_suppliers()
   const section = document.querySelector('#category-page')
   const main = section.querySelector('.main__column')
+  const h2 = section.querySelector('#category-name')
 
   let url = new URL(window.location.href);
   let id = url.searchParams.get('id')
@@ -14,6 +15,11 @@ import { get_suppliers } from "./API/suppliers/index.js"
     let cat = el.supplier_guid
     if (cat == id) return el
   })
+
+  
+  let supplier = suppliers.find(el => el.guid == id)
+  h2.textContent = supplier.name;
+
 
   for (let el of nomenclatures) {
     let new_price = Math.round( el.price - el.price * 0.02)
@@ -25,8 +31,8 @@ import { get_suppliers } from "./API/suppliers/index.js"
         <div class="block__prices">
         <div class="block__prices-left">
           
-          <span class="block__price">${new_price} руб.</span>
-          <span class="block__price-old">${el.price} руб.</span>
+          <span class="block__price">${new_price} р</span>
+          <span class="block__price-old">${el.price} р</span>
           </div>
 
         </div>

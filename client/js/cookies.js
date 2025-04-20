@@ -10,9 +10,9 @@
     btn.addEventListener('click', none);
 
     function none() {
-        section.classList.remove('top');
+        section.classList.remove('top')
         let div = JSON.stringify(section);
         if (!section.classList.contains('top')) localStorage.setItem('div', div);
-
+        section.style.display = 'none'
     }
 })()
